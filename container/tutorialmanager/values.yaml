@@ -40,7 +40,7 @@ appBackend:
 replicaCount: 1
 # Image
 image:
-  repository: lab2acr4bow.azurecr.io/lab2/tutorial-manager-be
+  repository: lab2williamacr.azurecr.io/lab2/tutorial-manager-be
   pullPolicy: Always
   tag: "latest"
 
