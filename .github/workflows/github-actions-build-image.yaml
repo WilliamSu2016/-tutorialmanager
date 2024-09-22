@@ -28,10 +28,10 @@ jobs:
       - name: Login to ACR
         uses: docker/login-action@v3
         with:
-          registry: lab2acr4bow.azurecr.io
+          registry: lab2williamacr.azurecr.io
           username: ${{ secrets.AZURE_CLIENT_ID }}
           password: ${{ secrets.AZURE_CLIENT_SECRET }}
-      #################
+      #######把代码从github上clone出来##########
       - run: echo "🎉 The job was automatically triggered by a ${{ github.event_name }} event."
       - run: echo "🐧 This job is now running on a ${{ runner.os }} server hosted by GitHub!"
       - run: echo "🔎 The name of your branch is ${{ github.ref }} and your repository is ${{ github.repository }}."
@@ -52,6 +52,6 @@ jobs:
           build-contexts: |
             bindir=./backend/target
           push: true
-          tags: lab2acr4bow.azurecr.io/lab2/tutorial-manager-be:latest      
+          tags: lab2williamacr.azurecr.io/lab2/tutorial-manager-be:latest      
       #################
       - run: echo "🍏 This job's status is ${{ job.status }}."
